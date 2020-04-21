@@ -1,8 +1,0 @@
-#! /usr/bin/env node
-const {program} = require('commander')
-program
-  .version(require('../package.json').version, '-v', '--version')
-  // 这里调用了 init, 传入 name 参数
-  .command('init <name>', 'init project') 
-  .command('refresh', 'refresh routers...')
-program.parse(process.argv)
