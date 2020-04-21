@@ -6,7 +6,7 @@ program.action(async (cmdObj, name) => {
   // console.log(name)
   console.log(`创建项目：${name[0]} .....`)
 
-  await clone('github:yuuFen/vuex-reimplement', name[0])
+  await clone('github:yuuFen/vue-template-for-cli-demo', name[0])
 })
 
 program.parse(process.argv)

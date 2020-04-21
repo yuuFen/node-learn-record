@@ -96,7 +96,7 @@ Debug - Start Debugging
   const process = ora('下载中...')
   process.start()
   
-  download('github:yuuFen/vuex-reimplement', '../test', (err) => {
+  download('github:yuuFen/vue-template-for-cli-demo', '../test', (err) => {
     // console.log(err ? 'Error' : 'Success')
     if (err) {
       process.fail()
@@ -111,7 +111,7 @@ Debug - Start Debugging
   > 让异步任务串行化（要符合规范）
 
   ```js
-  const repo = 'github:yuuFen/vuex-reimplement'
+  const repo = 'github:yuuFen/vue-template-for-cli-demo'
   const desc = '../test'
   clone(repo, desc)
   
@@ -151,7 +151,7 @@ Debug - Start Debugging
   
   // run
   const { clone } = require('./download')
-  const repo = 'github:yuuFen/vuex-reimplement'
+  const repo = 'github:yuuFen/vue-template-for-cli-demo'
   const desc = '../test'
   
   clone(repo, desc)
